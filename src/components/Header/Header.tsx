@@ -26,17 +26,17 @@ export default function Header() {
   <nav aria-label="Header Navigation" className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row">
     <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
       
-      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Work</Link></li>
-      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">Blogs</Link></li>
-      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#">About</Link></li>
+      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="/work">Work</Link></li>
+      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="/blog">Blogs</Link></li>
+      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="/about">About</Link></li>
     </ul>
 
   </nav>
   <nav aria-label="Header Navigation" className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 flex-col w-full mt-9 lg:mt-0 items-center overflow-hidden transition-all  lg:max-h-full lg:flex-row">
     <ul className="flex w-full justify-center flex-row items-center  lg:flex-row lg:justify-center lg:space-y-0 ">
-      <li className="lg:mr-12 mr-6"><Link className="rounded-full text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#"><Github className="bg-gray-800 rounded-full h-10 w-10 p-2"/></Link></li>
-      <li className="lg:mr-12 mr-6"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#"><Linkedin className="bg-gray-800 rounded-full h-10 w-10 p-2"/></Link></li>
-      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="#"><Mail className="bg-gray-800 rounded-full h-10 w-10 p-2"/></Link></li>
+      <li className="lg:mr-12 mr-6"><Link className="rounded-full text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="https://github.com/asmitashrestha"><Github className="bg-gray-800 rounded-full h-10 w-10 p-2"/></Link></li>
+      <li className="lg:mr-12 mr-6"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="https://www.linkedin.com/in/asmita-shrestha-399027217/"><Linkedin className="bg-gray-800 rounded-full h-10 w-10 p-2"/></Link></li>
+      <li className="lg:mr-12"><Link className="rounded text-lg font-semibold text-gray-300 hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl"><Mail className="bg-gray-800 rounded-full h-10 w-10 p-2"/></Link></li>
     </ul>
 
   </nav>
