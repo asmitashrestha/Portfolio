@@ -1,22 +1,15 @@
-// import Header from "@/components/Header/Header";
+"use client";
+import AboutMe from "@/components/AboutMe/AboutMe";
 import Homes from "@/components/Home/Home";
-import MyDescription from "@/components/MyDescription/MyDescription";
-import MyDetails from "@/components/MyDetails/MyDetails";
-
+import MyStack from "@/components/MyStack/MyStack";
 
 export default function Home() {
   return (
     <div className="">
-
-        {/* <Header /> */}
-        <Homes />
-        <div className="mt-9">
-        <MyDetails />
+      <Homes />
+      <div className="mt-9">
+        <AboutMe />
       </div>
-      <div className="mt-8">
-        <MyDescription/>
-      </div>
-
     </div>
   );
 }

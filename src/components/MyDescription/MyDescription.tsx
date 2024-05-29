@@ -1,10 +1,10 @@
-"use client";
+'use client'
 import Image from "next/image";
-import me from "../../../public/asmita.jpg";
+import me from "@assets/asmita.jpg";
 
 function MyDescription() {
   return (
-    <div className="flex space-x-7  bg-yellow w-[450px] rounded-2xl p-5 m-3">
+    <div className="flex space-x-7 mb-2  bg-yellow w-[400px] md:w-[460px] rounded-2xl p-5 m-2">
       <div className="">
         <Image
           src={me}

@@ -12,7 +12,7 @@ export default function Header() {
   };
   return (
     <div className="sticky">
-       <div className="bg-stone-950 mt-7 md:w-6/12 lg:w-[60%]  container relative mx-auto flex flex-col overflow-hidden px-[16px] py-3 lg:flex-row lg:items-center rounded-md">
+       <div className="bg-stone-950 mt-7 mx-auto max-w-sm md:max-w-4xl container relative  flex flex-col overflow-hidden px-[16px] py-3 lg:flex-row lg:items-center rounded-md">
   <Link href="/" className="flex items-center whitespace-nowrap text-2xl 
   font-black ">
     <span className="mr-10 w-8">
