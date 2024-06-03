@@ -66,16 +66,16 @@
     }
   }
 
-  @layer base {
+  body{
+    background-color: black;
+  }
+  
+
+  /* @layer base {
     * {
       @apply border-border;
     }
     body {
       @apply bg-background text-foreground;
     }
-  }
-
-body{
-  background-color: rgb(0, 0, 0);
-}
- 
+  } */

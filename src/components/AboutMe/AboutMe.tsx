@@ -5,6 +5,8 @@ import MyDetails from "../MyDetails/MyDetails";
 import MyExperience from "../MyExperience/MyExperience";
 import MyStack from "../MyStack/MyStack";
 import Footer from "../Footer/Footer";
+import Faques from "../Faq/Faques";
+import ButtonAboutMe from "../ButtonAboutMe/ButtonAboutMe";
 
 export default function AboutMe() {
   return (
@@ -84,42 +86,24 @@ export default function AboutMe() {
           </motion.div>
         </div>
       </div>
-      <motion.div 
-      initial={{
-        y: 100,
-        opacity: 0,
-      }}
-      animate={{
-        y: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.3,
-        damping: 200,
-        ease: easeIn,
-      }}
+      <motion.div
+        initial={{
+          y: 100,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.3,
+          damping: 200,
+          ease: easeIn,
+        }}
       >
-        <MyStack/>
+        <MyStack />
       </motion.div>
-      <div>
-      <motion.div 
-      initial={{
-        y: 100,
-        opacity: 0,
-      }}
-      animate={{
-        y: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.3,
-        damping: 200,
-        ease: easeIn,
-      }}
-      >
-        <Footer/>
-      </motion.div>
-      </div>
+
     </div>
   );
 }

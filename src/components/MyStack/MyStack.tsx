@@ -128,10 +128,10 @@ export default function MyStack() {
           </Marquee>
         </div>
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <Link href={'/about'} className="border border-gray 
         py-3 px-5 rounded-3xl text-gray">Know More About Me</Link>
-      </div>
+      </div> */}
     </div>
    
     

@@ -6,7 +6,14 @@ import me from "../../../public/asmita.jpg";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import MyDetails from "../MyDetails/MyDetails";
 import { easeIn, motion } from "framer-motion";
+import { signIn } from "next-auth/react";
 export default function Homes() {
+  // const handleGithub = ()=>{
+  //   signIn("github", {
+  //     callbackUrl:'/'
+  //   })
+  // }
+
   return (
     <div
       className="flex justify-between mt-24 mx-auto max-w-sm md:max-w-4xl lg:flex-row 
@@ -92,6 +99,13 @@ export default function Homes() {
             >
               Let's Talk
             </Link>
+            {/* this is the next auth 0 used to authenticate the user using github */}
+            {/* <button
+              onClick={handleGithub}
+              className="bg-yellow text-stone-800 px-4 py-[12px] rounded-[6px]"
+            >
+              Let's Talk
+            </button> */}
           </div>
           <div className="">
             <Link

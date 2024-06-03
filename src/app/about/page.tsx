@@ -1,10 +1,10 @@
 'use client'
-import AboutMe from "@/components/AboutMe/AboutMe";
+import About from '@/sections/About/page'
 
 export default function page() {
   return (
     <div className="">
-      <AboutMe/>
+      <About />
     </div>
   )
 }
