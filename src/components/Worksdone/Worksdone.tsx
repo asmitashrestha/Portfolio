@@ -20,6 +20,7 @@ interface WorkdoneProps {
 
 export default function Worksdone({limit}: WorkdoneProps) {
   const displayWorks = limit ? works.slice(0,limit) : works
+  
   return (
     <div className="flex justify-center">
       <div className="mt-7 flex md:flex-row flex-col flex-wrap max-auto 
