@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import me from "../../../public/asmita.jpg";
 import SocialMedia from "../SocialMedia/SocialMedia";
-import MyDetails from "../MyDetails/MyDetails";
 import { easeIn, motion } from "framer-motion";
-import { signIn } from "next-auth/react";
+import { useInView } from "react-intersection-observer";
+
 export default function Homes() {
   // const handleGithub = ()=>{
   //   signIn("github", {
@@ -14,19 +14,26 @@ export default function Homes() {
   //   })
   // }
 
+  const { ref: headingRef, inView: headingInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <div
-      className="flex justify-between mt-24 mx-auto max-w-sm md:max-w-4xl lg:flex-row 
+      className="flex justify-between mt-24 mx-auto max-w-sm 
+       md:max-w-4xl lg:flex-row 
      "
     >
       <motion.div
+        ref={headingRef}
         initial={{
           y: 100,
           opacity: 0,
         }}
         animate={{
-          y: 0,
-          opacity: 1,
+          y: headingInView ? 0 : 100,
+          opacity: headingInView ? 1 : 0,
         }}
         transition={{
           duration: 0.3,
@@ -43,13 +50,14 @@ export default function Homes() {
         </div>
 
         <motion.div
+          ref={headingRef}
           initial={{
             y: 100,
             opacity: 0,
           }}
           animate={{
-            y: 0,
-            opacity: 1,
+            y: headingInView ? 0 : 100,
+            opacity: headingInView ? 1 : 0,
           }}
           transition={{
             duration: 0.5,
@@ -62,13 +70,14 @@ export default function Homes() {
             I'm Asmita Shrestha.
           </h1>
           <h1 className="font-serif font-bold text-[40px] text-white">
-            I Code , Create
+            I Code <span className="text-yellow font-bold text-[50px]"> *</span> Create
           </h1>
           <div className="flex">
             <h1 className="font-serif font-bold text-[40px] text-white">
-              Innovate{" "}
+            <span className="text-yellow font-bold text-[50px] mr-2"> *</span> 
+               Innovate{" "}
             </h1>
-            <p className=" bg-yellow rounded-full h-3 w-3 mt-8 ml-2"></p>
+            <p className=" bg-yellow rounded-full h-3 w-3 mt-11 ml-2 "></p>
           </div>
           <div className="font-sans text-xl text-gray mt-3 ">
             <p>Empowering Ideas Through End-to-End</p>
@@ -77,13 +86,14 @@ export default function Homes() {
           </div>
         </motion.div>
         <motion.div
+          ref={headingRef}
           initial={{
             y: 100,
             opacity: 0,
           }}
           animate={{
-            y: 0,
-            opacity: 1,
+            y: headingInView ? 0 : 100,
+            opacity: headingInView ? 1 : 0,
           }}
           transition={{
             duration: 0.7,

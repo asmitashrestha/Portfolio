@@ -44,14 +44,6 @@ export default function Footer() {
           <li className="px-12">
             <Link
               className="rounded text-lg font-semibold text-gray hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
-              href="/blog"
-            >
-              Blogs
-            </Link>
-          </li>
-          <li className="px-12">
-            <Link
-              className="rounded text-lg font-semibold text-gray hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
               href="/about"
             >
               About

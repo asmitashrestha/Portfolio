@@ -15,7 +15,7 @@ export default function Home() {
           <Heading title="Selected Works" />
         </div>
 
-        <Worksdone />
+        <Worksdone limit={4} />
         <div className="pt-9">
         <ButtonSeeAllWork title="See All Works"/>  
         </div>

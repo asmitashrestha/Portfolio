@@ -4,7 +4,7 @@ import me from "@assets/asmita.jpg";
 
 function MyDescription() {
   return (
-    <div className="flex space-x-7 mb-2  bg-yellow w-[400px] md:w-[460px] rounded-2xl p-5 m-2">
+    <div className="flex space-x-7 mb-2  bg-yellow w-[370px] md:w-[460px] rounded-2xl p-5 m-2">
       <div className="">
         <Image
           src={me}
