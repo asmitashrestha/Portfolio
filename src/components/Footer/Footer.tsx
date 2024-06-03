@@ -63,7 +63,7 @@ export default function Footer() {
       <nav aria-label="Footer Navigation" className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full mx-auto items-center overflow-hidden transition-all lg:max-h-full flex-row py-7">
         <ul className="flex w-full items-center space-y-2 flex-row pt-7 justify-center lg:space-y-0">
           <li className="px-10">
-            <Link className="rounded text-lg font-semibold text-gray hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="/work">
+            <Link className="rounded text-lg font-semibold text-gray hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2" href="/works">
               Work
             </Link>
           </li>

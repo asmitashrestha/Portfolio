@@ -38,8 +38,7 @@ export default function AboutMe() {
         <Heading title={"About Me"} />
       </motion.div>
 
-      <div className="mx-auto max-w-sm md:max-w-4xl mt-9 flex flex-col md:flex-row justify-center  ">
-        <motion.div
+      <motion.div
           ref={headingRef}
           initial={{
             y: 100,
@@ -47,71 +46,42 @@ export default function AboutMe() {
           }}
           animate={{
             y: headingInView ? 0 : 100,
-            opacity: headingInView? 1 : 0,
+            opacity: headingInView ? 1 : 0,
+          }}
+          transition={{
+            duration: 0.3,
+          }} className="mx-auto max-w-sm md:max-w-4xl mt-9 flex flex-col md:flex-row justify-center  ">
+        <div
+          className=""
+        >
+          <MyDetails />
+        </div>
+        <div className="mt-2">
+          <div
+            className=""
+          >
+            <MyDescription />
+          </div>
+          <div
+            className=""
+          >
+            <MyExperience />
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+          ref={contentRef}
+          initial={{
+            y: 100,
+            opacity: 0,
+          }}
+          animate={{
+            y: contentInView ? 0 : 100,
+            opacity: contentInView ? 1 : 0,
           }}
           transition={{
             duration: 0.4,
           }}
-          className=""
-        >
-          <MyDetails />
-        </motion.div>
-        <div className="mt-2">
-          <motion.div
-          ref={headingRef}
-            initial={{
-              y: 100,
-              opacity: 0,
-            }}
-            animate={{
-              y: headingInView ? 0 : 100,
-              opacity: headingInView ? 1: 0,
-            }}
-            transition={{
-              duration: 0.3,
-              damping: 200,
-              ease: easeIn,
-            }}
-            className=""
-          >
-            <MyDescription />
-          </motion.div>
-          <motion.div
-          ref={headingRef}
-            initial={{
-              y: 100,
-              opacity: 0,
-            }}
-            animate={{
-              y: headingInView ? 0 : 100,
-              opacity: headingInView ? 1 : 0,
-            }}
-            transition={{
-              duration: 0.3,
-              damping: 200,
-              ease: easeIn,
-            }}
-            className=""
-          >
-            <MyExperience />
-          </motion.div>
-        </div>
-      </div>
-      <motion.div
-    ref={contentRef}
-        initial={{
-          y: 100,
-          opacity: 0,
-        }}
-        animate={{
-          y: contentInView ? 0 : 100,
-          opacity: contentInView ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.5,
-          damping: 200,
-          ease: easeIn,
-        }}
       >
         <MyStack />
       </motion.div>

@@ -22,7 +22,7 @@ export default function Homes() {
   return (
     <div
       className="flex justify-between mt-24 mx-auto max-w-sm 
-       md:max-w-4xl lg:flex-row 
+       md:max-w-4xl lg:flex-row  ml-5
      "
     >
       <motion.div
