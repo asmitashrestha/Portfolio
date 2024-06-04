@@ -6,10 +6,9 @@ import { easeIn, motion } from "framer-motion";
 
 export default function SocialMedia() {
   return (
-    <div>
       <nav
         aria-label="Header Navigation"
-        className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 flex-col  mt-9 lg:mt-0 items-center overflow-hidden transition-all  lg:max-h-full lg:flex-row bg-slate-700 opacity-75 rounded-[30px] py-1 w-full ml-7"
+        className="peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 flex-col mt-9 lg:mt-0 items-center overflow-hidden transition-all  lg:max-h-full lg:flex-row bg-slate-700 opacity-75 rounded-[30px] py-1 w-full ml-7"
       >
         <ul className="flex w-full justify-center flex-row items-center  lg:flex-row lg:justify-center lg:space-y-0 ">
           <li className="lg:mr-2 mr-6">
@@ -77,12 +76,12 @@ export default function SocialMedia() {
                 damping: 200,
                 ease: easeIn,
               }}
-              ><Mail className="bg-slate-900 rounded-full h-10 w-10 p-2" /></motion.div>
+              ><Mail  className="bg-slate-900 rounded-full h-10 w-10 p-2" /></motion.div>
               
             </Link>
           </li>
         </ul>
       </nav>
-    </div>
+    
   );
 }

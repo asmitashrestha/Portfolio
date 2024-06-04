@@ -1,4 +1,5 @@
-import Works from '@/sections/Works/page'
+import Works from "@/components/Works/Works";
+
 
 export default function page() {
   return (

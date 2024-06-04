@@ -8,12 +8,6 @@ import { easeIn, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Homes() {
-  // const handleGithub = ()=>{
-  //   signIn("github", {
-  //     callbackUrl:'/'
-  //   })
-  // }
-
   const { ref: headingRef, inView: headingInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -66,16 +60,21 @@ export default function Homes() {
           }}
           className="mt-3 mb-7"
         >
+          <div className="flex">
+            <h1 className="font-serif font-bold text-[40px] text-white">
+              I'm Asmita Shrestha
+            </h1>
+            <p className=" bg-yellow rounded-full h-3 w-3 mt-8 ml-2 "></p>
+          </div>
+
           <h1 className="font-serif font-bold text-[40px] text-white">
-            I'm Asmita Shrestha.
-          </h1>
-          <h1 className="font-serif font-bold text-[40px] text-white">
-            I Code <span className="text-yellow font-bold text-[50px]"> *</span> Create
+            I Code <span className="text-yellow font-bold text-[50px]"> *</span>{" "}
+            Create
           </h1>
           <div className="flex">
             <h1 className="font-serif font-bold text-[40px] text-white">
-            <span className="text-yellow font-bold text-[50px] mr-2"> *</span> 
-               Innovate{" "}
+              <span className="text-yellow font-bold text-[50px] mr-2"> *</span>
+              Innovate{" "}
             </h1>
             <p className=" bg-yellow rounded-full h-3 w-3 mt-11 ml-2 "></p>
           </div>
@@ -109,13 +108,6 @@ export default function Homes() {
             >
               Let's Talk
             </Link>
-            {/* this is the next auth 0 used to authenticate the user using github */}
-            {/* <button
-              onClick={handleGithub}
-              className="bg-yellow text-stone-800 px-4 py-[12px] rounded-[6px]"
-            >
-              Let's Talk
-            </button> */}
           </div>
           <div className="">
             <Link

@@ -4,12 +4,11 @@ import Image from "next/image";
 
 import Heading from "../Heading/Heading";
 import Link from "next/link";
-import { tools2 } from "../Data/Data";
+import { tools2 } from "../Constant/Constant";
 
 export default function MyStack() {
   return (
-    <div className="pb-5">
-      <div className="mx-auto max-w-sm md:max-w-4xl   bg-stone-950 rounded-3xl  justify-center text-center items-center mb-7">
+      <div className="mx-auto pb-5 max-w-sm md:max-w-4xl   bg-stone-950 rounded-3xl  justify-center text-center items-center mb-7">
         <div className="pt-4">
           <Heading title="My Stack" />
         </div>
@@ -20,7 +19,6 @@ export default function MyStack() {
                 key={index}
                 className="flex bg-darkgray rounded-2xl px-4 py-2 flex-col md:flex-row items-center m-2 space-x-2"
               >
-                <div>
                   <Image
                     src={logo}
                     alt={title}
@@ -28,7 +26,6 @@ export default function MyStack() {
                     width="50"
                     height="50"
                   />
-                </div>
                 <div>
                   <p className="text-white font-serif text-xl">{title}</p>
                   <p className="text-gray ">{description}</p>
@@ -42,7 +39,6 @@ export default function MyStack() {
                 key={index}
                 className="flex bg-darkgray rounded-2xl px-4 py-2 flex-col md:flex-row items-center m-2 space-x-2"
               >
-                <div>
                   <Image
                     src={tool.logo}
                     alt={tool.title}
@@ -50,7 +46,6 @@ export default function MyStack() {
                     width="50"
                     height="50"
                   />
-                </div>
                 <div>
                   <p className="text-white font-serif text-xl">{tool.title}</p>
                   <p className="text-gray ">{tool.description}</p>
@@ -60,6 +55,6 @@ export default function MyStack() {
           </Marquee>
         </div>
       </div>
-    </div>
+    
   );
 }

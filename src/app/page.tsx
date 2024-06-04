@@ -8,7 +8,7 @@ import Worksdone from "@/components/Worksdone/Worksdone";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <Homes />
       <div className="mt-9">
         <div className="mt-24">
@@ -23,6 +23,6 @@ export default function Home() {
         <AboutMe />
         <ButtonAboutMe title="Know more about me" />
       </div>
-    </div>
+    </>
   );
 }

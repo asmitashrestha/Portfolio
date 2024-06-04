@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { works } from "../Data/Data"; // Import works data
+import { works } from "../Constant/Constant"; // Import works data
 import { MoveUpRight } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import { easeIn, motion } from "framer-motion";

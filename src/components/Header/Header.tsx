@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <>
+  
       <div className="bg-stone-950 mx-auto max-w-sm md:max-w-4xl container  flex flex-col overflow-hidden px-[16px] py-3 lg:flex-row lg:items-center rounded-md sticky top-5 z-50 shadow-md">
         <Link
           href="/"
@@ -50,7 +50,7 @@ export default function Header() {
             </li>
             <li className="lg:mr-8">
               <Link
-                className="rounded text-lg font-semibold text-gray hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                className="border-none text-lg font-semibold text-gray hover:text-white transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
                 href="/about"
               >
                 About
@@ -91,6 +91,5 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-    </>
   );
 }

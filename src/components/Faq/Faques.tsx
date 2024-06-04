@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
-import { accordionData } from "../Data/Data";
+import { accordionData } from "../Constant/Constant";
 
 export default function Faques() {
   const { ref: headingRef, inView: headingInView } = useInView({
