@@ -62,9 +62,9 @@ export default function Homes() {
         >
           <div className="flex">
             <h1 className="font-serif font-bold text-[40px] text-white">
-              I'm Asmita Shrestha
+              I'm Asmita Shrestha<span className=" text-yellow rounded-full text-6xl mt-8 ml-2 ">.</span>
             </h1>
-            <p className=" bg-yellow rounded-full h-3 w-3 mt-8 ml-2 "></p>
+            
           </div>
 
           <h1 className="font-serif font-bold text-[40px] text-white">

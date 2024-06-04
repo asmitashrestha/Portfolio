@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        primarys:"#3F3F4E",
         lightyellow:"#fde7d6",
         black:"#000000",
         darkgray:"#262626",
